@@ -1,5 +1,16 @@
 import streamlit as st
 import os
+import gdown
+
+MODEL_FILE = "music_generation_model.h5"
+
+if not os.path.exists(MODEL_FILE):
+    file_id = "1gaC0Y44Sr52XBq3q-rijiN5oOMqjmQWV"
+    url = f"https://drive.google.com/uc?id={file_id}"
+
+    gdown.download(url, MODEL_FILE, quiet=False)
+
+    gdown.download(url, MODEL_FILE, quiet=False)
 
 st.set_page_config(page_title="AI Music Generator", page_icon="🎵")
 
