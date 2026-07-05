@@ -1,5 +1,4 @@
-tensorflow
-numpy
-music21
-ipython
-jupyter
+streamlit
+tensorflow-cpu==2.16.1
+numpy==1.26.4
+music21==9.3.0
